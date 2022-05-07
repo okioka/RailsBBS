@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+個人的な勉強用。
+Rails + React + TypeScriptで掲示板を作成。
+react-rails gemを採用しておりRailsのViewからReactコンポーネントを呼び出す作りとなっている。
 
-Things you may want to cover:
+# 画面サンプル
 
-* Ruby version
+[![Image from Gyazo](https://i.gyazo.com/5c723dcda9d6892f0c20701a89a32f07.png)](https://gyazo.com/5c723dcda9d6892f0c20701a89a32f07)
 
-* System dependencies
+# 機能
+- 投稿表示
+- 新規投稿
+- 投稿削除
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
