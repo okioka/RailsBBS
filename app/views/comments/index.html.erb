@@ -1,0 +1,18 @@
+<%= javascript_pack_tag 'application' %>
+
+<div class="center">
+  <div class="back">
+    <h1>掲示板</h1>
+    <div class="bbs">
+      <% @comments.each do |comment| %>
+        <%= react_component("PostComment", {
+          id: comment.id,
+          name: comment.name,
+          postDateTime: comment.post_date_time,
+          comment: comment.comment
+        }) %>
+      <% end %>
+      <%= react_component("CommentForm") %>
+    </div>
+  </div>
+</div>
