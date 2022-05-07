@@ -24,8 +24,7 @@ class Comment extends React.Component {
     // 投稿削除
     axios.delete(url).then(res => {
       alert("投稿の削除に成功しました")
-      // TODO : 孫コンポーネントへの関数の受け渡しがうまくいかないので調査すること
-      // this.props.viewCom()
+      this.props.viewCom()
     })
     .catch(error => {
       alert("投稿の削除に失敗しました")
