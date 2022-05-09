@@ -1,8 +1,8 @@
 # README
 
-個人的な勉強用。
-Rails + React + TypeScriptで掲示板を作成。
-react-rails gemを採用しておりRailsのViewからReactコンポーネントを呼び出す作りとなっている。
+個人的な勉強用。  
+Rails + React + TypeScriptで掲示板を作成。  
+react-rails gemを採用しておりRailsのViewからReactコンポーネントを呼び出す作りとなっている。  
 
 # 機能
 - 投稿表示
