@@ -12,3 +12,23 @@ react-rails gemを採用しておりRailsのViewからReactコンポーネント
 - 投稿削除
 [![Image from Gyazo](https://i.gyazo.com/966a5d38be244bf47c99b0278b860a46.gif)](https://gyazo.com/966a5d38be244bf47c99b0278b860a46)
 
+# 使い方
+bundleのインストール  
+```bundle install``` 
+
+DB構築  
+```rails db:create```  
+```rails db:migrate```  
+
+webpackerの利用  
+```rails webpacker:install```  
+```rails webpacker:install:react```  
+```rails generate react:install```  
+```rails webpacker:install:typescript```  
+```rails webpacker:compile```  
+
+サーバー起動  
+```docker-compose up```  
+
+ブラウザで動作確認  
+サーバー起動後、[http://localhost:3000/comments](http://localhost:3000/comments)にアクセス！
