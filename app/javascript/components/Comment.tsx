@@ -47,7 +47,7 @@ class Comment extends React.Component {
       <React.Fragment>
         <div>
           <h3>
-            {this.props.id} . {this.props.name} . {this.dateFormat(this.props.post_date_time)}　
+            {this.props.index} . {this.props.name} . {this.dateFormat(this.props.post_date_time)}　
             <button className="btn_small}" onClick={this.delete.bind(this)}>削除</button>
           </h3>
           {newLineTexts()}
