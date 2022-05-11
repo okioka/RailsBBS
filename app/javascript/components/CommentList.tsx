@@ -8,7 +8,7 @@ class CommentList extends React.Component {
     const viewCom = () => this.props.viewCom()
     const commentNodes = this.props.data.map(function(comment, index) {
       return (
-        <Comment viewCom={() => viewCom()} name={comment.name} id={index+1} post_date_time={comment.post_date_time} key={comment.id}>
+        <Comment viewCom={() => viewCom()} name={comment.name} id={comment.id} post_date_time={comment.post_date_time} index={index+1} key={comment.id}>
           {comment.comment}
         </Comment>
       )
