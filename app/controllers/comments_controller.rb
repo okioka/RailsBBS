@@ -1,12 +1,13 @@
-class CommentsController < ApplicationController
-protect_from_forgery
+# frozen_string_literal: true
 
-  def index
-  end
+class CommentsController < ApplicationController
+  protect_from_forgery
+
+  def index; end
 
   def show
     @comments = Comment.all
-    render :json => @comments
+    render json: @comments
   end
 
   def create
@@ -21,5 +22,4 @@ protect_from_forgery
       render json: @comment.errors, status: :unprocessable_entity
     end
   end
-
 end
